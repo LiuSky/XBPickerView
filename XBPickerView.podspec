@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   
   s.name             = 'XBPickerView'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of XBPickerView.'
+  s.summary          = '自定义选择器'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
