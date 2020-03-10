@@ -14,13 +14,19 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>XBPickerView.xcscheme_^#shared#^_</key>
+		<key>XBPickerView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>86D34E13ED0FF761AF9C3CB79E6E60C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

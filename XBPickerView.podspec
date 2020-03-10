@@ -23,10 +23,4 @@ TODO: Add long description of the pod here.
   s.subspec 'Source' do |ss|
     ss.source_files = 'XBPickerView/Classes/*'
   end
-
-
-  s.subspec 'Binary' do |ss|
-    ss.vendored_frameworks = "Carthage/Build/iOS/Static/XBPickerView.framework"
-    ss.user_target_xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)' }
-  end
 end

@@ -1,7 +1,7 @@
 {
   "name": "XBPickerView",
   "version": "1.0.0",
-  "summary": "A short description of XBPickerView.",
+  "summary": "自定义选择器",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LiuSky/XBPickerView",
   "license": "MIT",
@@ -23,13 +23,6 @@
     {
       "name": "Source",
       "source_files": "XBPickerView/Classes/*"
-    },
-    {
-      "name": "Binary",
-      "vendored_frameworks": "Carthage/Build/iOS/Static/XBPickerView.framework",
-      "user_target_xcconfig": {
-        "LIBRARY_SEARCH_PATHS": "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)"
-      }
     }
   ],
   "swift_version": "5.0"
