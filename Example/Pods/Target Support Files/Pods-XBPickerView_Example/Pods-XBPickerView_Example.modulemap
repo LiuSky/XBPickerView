@@ -1,0 +1,6 @@
+framework module Pods_XBPickerView_Example {
+  umbrella header "Pods-XBPickerView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

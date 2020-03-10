@@ -1,0 +1,22 @@
+{
+  "name": "XBPickerView",
+  "version": "0.1.0",
+  "summary": "A short description of XBPickerView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/LiuSky/XBPickerView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LiuSky": "327847390@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/LiuSky/XBPickerView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XBPickerView/Classes/**/*"
+}
