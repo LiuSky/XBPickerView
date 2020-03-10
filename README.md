@@ -5,25 +5,36 @@
 [![License](https://img.shields.io/cocoapods/l/XBPickerView.svg?style=flat)](https://cocoapods.org/pods/XBPickerView)
 [![Platform](https://img.shields.io/cocoapods/p/XBPickerView.svg?style=flat)](https://cocoapods.org/pods/XBPickerView)
 
-## Example
+## Requirements:
+- **iOS** 9.0+
+- Xcode 10.0+
+- Swift 5.0+
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Demo Figure
+<p align="center">
+<img src="https://github.com/LiuSky/XBPickerView/blob/develop/demo.png?raw=true" title="演示图">
+</p>
 
-## Requirements
 
-## Installation
+## Installation Cocoapods
+<pre><code class="ruby language-ruby">pod 'XBPickerView', '~> 1.0.0'</code></pre>
 
-XBPickerView is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## Use
 
-```ruby
-pod 'XBPickerView'
+```swift
+    private lazy var pickerView: XBPickerView = {
+        $0.delegate = self
+        $0.dataSource = self
+        $0.unitAttributedText = NSAttributedString(string: "厘米", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15),
+        NSAttributedString.Key.foregroundColor: UIColor.black,
+        NSAttributedString.Key.backgroundColor: UIColor.clear])
+        $0.unitLabelLeftConstraint?.constant = 50
+        $0.selectedAttributes = [.font: UIFont.systemFont(ofSize: 39), .foregroundColor: UIColor.red]
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(XBPickerView())
 ```
 
-## Author
-
-LiuSky, 327847390@qq.com
 
 ## License
-
-XBPickerView is available under the MIT license. See the LICENSE file for more info.
+XBPickerView is released under an MIT license. See [LICENSE](LICENSE) for more information.

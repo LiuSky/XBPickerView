@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIPickerView+DataSource.h"
 
 FOUNDATION_EXPORT double XBPickerViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char XBPickerViewVersionString[];
