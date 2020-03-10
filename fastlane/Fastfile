@@ -39,7 +39,7 @@ platform :ios do
       podspec: podspec_path,
       allow_warnings: true,
       skip_import_validation: true,
-      sources: [repo_source, "https://github.com/CocoaPods/Specs.git"])
+      sources: [repo_source])
 
     # 设置 podspec 版本
     version_bump_podspec(
