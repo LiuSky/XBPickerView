@@ -12,7 +12,7 @@
 
 ## Demo Figure
 <p align="center">
-<img src="https://github.com/LiuSky/XBPickerView/blob/develop/demo.png?raw=true" title="演示图">
+<img src="https://github.com/LiuSky/XBPickerView/blob/master/demo.png?raw=true" title="演示图">
 </p>
 
 
