@@ -1,0 +1,11 @@
+framework module XBPickerView {
+  umbrella header "XBPickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module XBPickerView.Swift {
+    header "XBPickerView-Swift.h"
+    requires objc
+}
