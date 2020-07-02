@@ -59,11 +59,9 @@ public class PickerView: UIPickerView {
         let tableViewCell = super.tableView(tableView, cellForRowAt: indexPath)
         if tableView.superview === tableView.superview?.superview?.subviews.last {
             
-            var pickerCommonCell: PickerCommonView?
-            if #available(iOS 14.0, *) {
+            var pickerCommonCell = tableViewCell.subviews.last?.subviews.first as? PickerCommonView
+            if #available(iOS 14.0, *), pickerCommonCell == nil {
                 pickerCommonCell = tableViewCell.subviews.first?.subviews.first as? PickerCommonView
-            } else {
-                pickerCommonCell = tableViewCell.subviews.last?.subviews.first as? PickerCommonView
             }
             
             guard let temPickerCommonCell = pickerCommonCell,
