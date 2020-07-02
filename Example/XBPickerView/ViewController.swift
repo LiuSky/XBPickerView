@@ -13,17 +13,17 @@ import XBPickerView
 final class ViewController: UIViewController {
 
     /// 选择器
-    private lazy var pickerView: XBPickerView = {
+    private lazy var pickerView: PickerView = {
         $0.delegate = self
         $0.dataSource = self
         $0.unitAttributedText = NSAttributedString(string: "厘米", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15),
         NSAttributedString.Key.foregroundColor: UIColor.black,
         NSAttributedString.Key.backgroundColor: UIColor.clear])
         $0.unitLabelLeftConstraint?.constant = 50
-        $0.selectedAttributes = [.font: UIFont.systemFont(ofSize: 39), .foregroundColor: UIColor.red]
+        $0.selectedAttributes = [.font: UIFont.systemFont(ofSize: 30), .foregroundColor: UIColor.red]
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
-    }(XBPickerView())
+    }(PickerView())
     
     /// 数据源
     private var dataSource: [(key: Int, value: String)] {
@@ -81,9 +81,11 @@ extension ViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 40
     }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return dataSource[row].value
+
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let cell = PickerCommonView()
+        cell.labelTitle.attributedText = NSMutableAttributedString(string: dataSource[row].value)
+        return cell
     }
 }
 

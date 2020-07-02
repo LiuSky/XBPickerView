@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'XBPickerView_Example' do
   pod 'XBPickerView', :path => '../'
-
-  target 'XBPickerView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

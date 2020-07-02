@@ -1,5 +1,5 @@
 //
-//  XBPickerView.swift
+//  PickerView.swift
 //  XBPickerView
 //
 //  Created by xiaobin liu on 2020/3/10.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-/// MARK - XBPickerView
-public class XBPickerView: UIPickerView {
+/// MARK - PickerView
+public class PickerView: UIPickerView {
     
     /// 单位标签
     private lazy var unitLabel: UILabel = {
@@ -32,8 +32,8 @@ public class XBPickerView: UIPickerView {
         }
     }
     
-    /// 灰色的线
-    public var lineColor: UIColor? = UIColor(red: 183.0/255.0, green: 183.0/255.0, blue: 183.0/255.0, alpha: 1.0)
+    /// 线颜色
+    public var lineColor = UIColor(red: 183.0/255.0, green: 183.0/255.0, blue: 183.0/255.0, alpha: 1.0)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -54,34 +54,53 @@ public class XBPickerView: UIPickerView {
         unitLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 1.5).isActive = true
     }
     
-   /// UITableViewDataSource
+    /// MARK - UITableViewDataSource
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableViewCell = super.tableView(tableView, cellForRowAt: indexPath)
         if tableView.superview === tableView.superview?.superview?.subviews.last {
             
-            var label: UILabel?
-            for view in tableViewCell.subviews {
-                if let temView = view as? UILabel {
-                    label = temView
-                    break
-                }
+            var pickerCommonCell: PickerCommonView?
+            if #available(iOS 14.0, *) {
+                pickerCommonCell = tableViewCell.subviews.first?.subviews.first as? PickerCommonView
+            } else {
+                pickerCommonCell = tableViewCell.subviews.last?.subviews.first as? PickerCommonView
             }
-            label?.font = selectedAttributes?[.font] as? UIFont
-            label?.textColor = selectedAttributes?[.foregroundColor] as? UIColor
+            
+            guard let temPickerCommonCell = pickerCommonCell,
+                  let selectedAttributes = self.selectedAttributes else {
+                return tableViewCell
+            }
+            
+            let labelTitle = temPickerCommonCell.labelTitle
+            labelTitle.font = selectedAttributes[.font] as? UIFont
+            labelTitle.textColor = selectedAttributes[.foregroundColor] as? UIColor
         }
         return tableViewCell
     }
     
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         
-        guard let temLineColor = lineColor else {
-            return
-        }
-        
         for item in self.subviews {
-            if item.frame.size.height < 1 {
-                item.backgroundColor = temLineColor
+
+            if #available(iOS 14.0, *) {
+                if item.frame.size.height == 42 {
+                    item.backgroundColor = UIColor.clear
+                    let topView = UIView()
+                    topView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                    topView.backgroundColor = lineColor
+                    item.addSubview(topView)
+
+                    let bottomView = UIView()
+                    bottomView.frame = CGRect(x: 0, y: item.frame.size.height - 1/UIScreen.main.scale, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                    bottomView.backgroundColor = lineColor
+                    item.addSubview(bottomView)
+                }
+            } else {
+                if item.frame.size.height < 1 {
+                    item.backgroundColor = lineColor
+                }
             }
         }
     }

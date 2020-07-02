@@ -1,7 +1,5 @@
 PODS:
-  - XBPickerView (1.0.0):
-    - XBPickerView/Source (= 1.0.0)
-  - XBPickerView/Source (1.0.0)
+  - XBPickerView (2.0.0)
 
 DEPENDENCIES:
   - XBPickerView (from `../`)
@@ -11,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XBPickerView: fe4e5f9e7fdc9bb9ed7d283a55effcc63d69bbbb
+  XBPickerView: 69553c647260f9d97e18289eec6cf98c4bcf17f3
 
-PODFILE CHECKSUM: 4128105234c00d26f4bff545363fa42d56d64a1a
+PODFILE CHECKSUM: c82a68d629889f645908bb33e4d4bf54a4b08d63
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
