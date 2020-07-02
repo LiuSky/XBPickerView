@@ -17,22 +17,22 @@
 
 
 ## Installation Cocoapods
-<pre><code class="ruby language-ruby">pod 'XBPickerView', '~> 1.0.0'</code></pre>
+<pre><code class="ruby language-ruby">pod 'XBPickerView', '~> 2.0.0'</code></pre>
 
 ## Use
 
 ```swift
-    private lazy var pickerView: XBPickerView = {
+    private lazy var pickerView: PickerView = {
         $0.delegate = self
         $0.dataSource = self
         $0.unitAttributedText = NSAttributedString(string: "厘米", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15),
         NSAttributedString.Key.foregroundColor: UIColor.black,
         NSAttributedString.Key.backgroundColor: UIColor.clear])
         $0.unitLabelLeftConstraint?.constant = 50
-        $0.selectedAttributes = [.font: UIFont.systemFont(ofSize: 39), .foregroundColor: UIColor.red]
+        $0.selectedAttributes = [.font: UIFont.systemFont(ofSize: 30), .foregroundColor: UIColor.red]
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
-    }(XBPickerView())
+    }(PickerView())
 ```
 
 
