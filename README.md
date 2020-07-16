@@ -17,7 +17,7 @@
 
 
 ## Installation Cocoapods
-<pre><code class="ruby language-ruby">pod 'XBPickerView', '~> 2.0.1'</code></pre>
+<pre><code class="ruby language-ruby">pod 'XBPickerView', '~> 2.1.0'</code></pre>
 
 ## Use
 

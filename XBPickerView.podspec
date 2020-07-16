@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   
   s.name             = 'XBPickerView'
-  s.version          = '2.0.1'
+  s.version          = '2.1.0'
   s.summary          = '自定义选择器'
 
   s.description      = <<-DESC

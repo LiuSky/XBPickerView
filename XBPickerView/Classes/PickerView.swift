@@ -80,22 +80,22 @@ public class PickerView: UIPickerView {
     public override func layoutSubviews() {
         super.layoutSubviews()
         
-        for item in self.subviews {
+        if #available(iOS 14.0, *) {
+            if let item = self.subviews.last {
+                item.backgroundColor = UIColor.clear
+                let topView = UIView()
+                topView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                topView.backgroundColor = lineColor
+                item.addSubview(topView)
 
-            if #available(iOS 14.0, *) {
-                if item.frame.size.height == 42 {
-                    item.backgroundColor = UIColor.clear
-                    let topView = UIView()
-                    topView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
-                    topView.backgroundColor = lineColor
-                    item.addSubview(topView)
-
-                    let bottomView = UIView()
-                    bottomView.frame = CGRect(x: 0, y: item.frame.size.height - 1/UIScreen.main.scale, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
-                    bottomView.backgroundColor = lineColor
-                    item.addSubview(bottomView)
-                }
-            } else {
+                let bottomView = UIView()
+                bottomView.frame = CGRect(x: 0, y: item.frame.size.height - 1/UIScreen.main.scale, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                bottomView.backgroundColor = lineColor
+                item.addSubview(bottomView)
+            }
+            
+        } else {
+            for item in self.subviews {
                 if item.frame.size.height < 1 {
                     item.backgroundColor = lineColor
                 }

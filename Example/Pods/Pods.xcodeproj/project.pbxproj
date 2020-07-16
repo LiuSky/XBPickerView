@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		246BB363536FA204B722998D20DABAF2 /* PickerCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA170FFDC9CD8CF73D121AA631B2140 /* PickerCommonView.swift */; };
+		1A67EA9DF32BA4317CF687F2EF9AC234 /* PickerCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F418890E910D77E89AAB6B918A7B08 /* PickerCommonView.swift */; };
+		4307E05669ECAF835FCDBF9D81A6FF2A /* XBPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFE5CF5D32FB1840A4CA303267CFF2B /* XBPickerView-dummy.m */; };
 		4FB6964468AC1EDB8326E71B149C25F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		643464B33A6CF2B2C2AD5ED494775C24 /* UIPickerView+DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E11426A539D8B0542F9EFB232EF9822F /* UIPickerView+DataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C6662603B12C8AC166A5C68A81F1DBF /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC948A976F41EC5DDAD7857AA15BC50D /* PickerView.swift */; };
-		906A795E49315CA09648B2A960A0E8E9 /* XBPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3FFB1BE4768B9DC889521237E71FCC /* XBPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		643464B33A6CF2B2C2AD5ED494775C24 /* UIPickerView+DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E75060D0B9008DEEBF8EA5A74CF774 /* UIPickerView+DataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		906A795E49315CA09648B2A960A0E8E9 /* XBPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D89B4C4867F5DF1EA39282B0F8B71B3 /* XBPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		913EFAD4F72A66770A6C17ACCE224213 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A1889B609F76AA023AF64FD3129C8BB1 /* XBPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6646FE2F2A1BBB2B8CB63F5CE915C60E /* XBPickerView-dummy.m */; };
 		ABDD183F569DA4E36FD184E9D5367588 /* Pods-XBPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 871EC12DE2FBFCD5CB00FA5E627183C4 /* Pods-XBPickerView_Example-dummy.m */; };
 		B7D9B33DC58E7550B58A76323E9C0DD5 /* Pods-XBPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9527B8AE3215F5083DC032DAD10083E5 /* Pods-XBPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5BE2CF16DD41BDBF434647DFC97DC35 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F2A34A166FFD43E595242FD8EDD212 /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,32 +29,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0350FC3B85C565A60AB8AD7D53FD5C1F /* XBPickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XBPickerView.debug.xcconfig; sourceTree = "<group>"; };
+		0D89B4C4867F5DF1EA39282B0F8B71B3 /* XBPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XBPickerView-umbrella.h"; sourceTree = "<group>"; };
 		1230107242157BC9EF48D2135766AA3E /* Pods-XBPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XBPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1C27994E19513E9CCE2D19F5DE87B7C4 /* XBPickerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XBPickerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		27F8D4E5E7E565867FB6BCF4244D34E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		17E75060D0B9008DEEBF8EA5A74CF774 /* UIPickerView+DataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPickerView+DataSource.h"; path = "XBPickerView/Classes/UIPickerView+DataSource.h"; sourceTree = "<group>"; };
+		1894D50762809CE2D6ACA06EC89AF4FD /* XBPickerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XBPickerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3E3FFB1BE4768B9DC889521237E71FCC /* XBPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XBPickerView-umbrella.h"; sourceTree = "<group>"; };
-		3FA170FFDC9CD8CF73D121AA631B2140 /* PickerCommonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerCommonView.swift; path = XBPickerView/Classes/PickerCommonView.swift; sourceTree = "<group>"; };
+		38CF32691768A3D0726B5133853EB4E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4662DD168F9E7AE6EE6A63EB11C3384A /* Pods-XBPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XBPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4F898ABF8A244C3C00AD837DD8509C7C /* Pods-XBPickerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XBPickerView_Example.modulemap"; sourceTree = "<group>"; };
-		6646FE2F2A1BBB2B8CB63F5CE915C60E /* XBPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XBPickerView-dummy.m"; sourceTree = "<group>"; };
+		66F2A34A166FFD43E595242FD8EDD212 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerView.swift; path = XBPickerView/Classes/PickerView.swift; sourceTree = "<group>"; };
 		6EEF6CB21BC600DB48E8E172D11BE53E /* Pods-XBPickerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XBPickerView_Example-Info.plist"; sourceTree = "<group>"; };
 		7925E39181E29226ED6F8F1EC9DFB293 /* Pods-XBPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XBPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8147797193D0F18362ECA59D62A7C75B /* XBPickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XBPickerView.debug.xcconfig; sourceTree = "<group>"; };
 		871EC12DE2FBFCD5CB00FA5E627183C4 /* Pods-XBPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XBPickerView_Example-dummy.m"; sourceTree = "<group>"; };
-		877627C07B11C469CDB0A5F83D6E7E1F /* XBPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XBPickerView.modulemap; sourceTree = "<group>"; };
 		9527B8AE3215F5083DC032DAD10083E5 /* Pods-XBPickerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XBPickerView_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DBF7C9158C3B529B30A8F93D633CFBD /* Pods_XBPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A661ADA1D9A99F4479359AB4A1F973CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		AE2DC92745B557E1CB996762E10EB537 /* XBPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XBPickerView-Info.plist"; sourceTree = "<group>"; };
+		9BBE86144C1852D84A5F51C98F31DEA8 /* XBPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XBPickerView.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBF7C9158C3B529B30A8F93D633CFBD /* Pods_XBPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XBPickerView_Example.framework; path = "Pods-XBPickerView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECF01F1935A7159C215F515526C392A /* XBPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XBPickerView-Info.plist"; sourceTree = "<group>"; };
 		B98CD405E908C0AAB4E73011B1750424 /* Pods-XBPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XBPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C257F9B486DFD5751C0E296E19A07511 /* XBPickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XBPickerView.release.xcconfig; sourceTree = "<group>"; };
+		BCFE5CF5D32FB1840A4CA303267CFF2B /* XBPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XBPickerView-dummy.m"; sourceTree = "<group>"; };
+		CC77CE8921B59D91DF67916CF4C9D179 /* XBPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XBPickerView-prefix.pch"; sourceTree = "<group>"; };
 		D0CC41E29FC42559118C3B6153067BDF /* Pods-XBPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XBPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DC948A976F41EC5DDAD7857AA15BC50D /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerView.swift; path = XBPickerView/Classes/PickerView.swift; sourceTree = "<group>"; };
-		E11426A539D8B0542F9EFB232EF9822F /* UIPickerView+DataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPickerView+DataSource.h"; path = "XBPickerView/Classes/UIPickerView+DataSource.h"; sourceTree = "<group>"; };
-		F375145B2740F109E507A454FB7AC50D /* XBPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XBPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9426D542B94BB449E786A7CA64A0D8D /* XBPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XBPickerView-prefix.pch"; sourceTree = "<group>"; };
+		E5F418890E910D77E89AAB6B918A7B08 /* PickerCommonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerCommonView.swift; path = XBPickerView/Classes/PickerCommonView.swift; sourceTree = "<group>"; };
+		F17D1719E47048E652876B44EF0CA568 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F375145B2740F109E507A454FB7AC50D /* XBPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XBPickerView.framework; path = XBPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA1CD823AA3C864B91B0B51599DF07C /* XBPickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XBPickerView.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		115BC0B4D35CBB9047825451401E472B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CA05C93B6879839D7EBDC001E0C388EF /* XBPickerView */,
+				2915F0DC8D9AC6363592127C54556224 /* XBPickerView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -102,19 +102,17 @@
 			path = "Target Support Files/Pods-XBPickerView_Example";
 			sourceTree = "<group>";
 		};
-		4CFA8D48EB806B9636A73D82FEBAC3FC /* Support Files */ = {
+		2915F0DC8D9AC6363592127C54556224 /* XBPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				877627C07B11C469CDB0A5F83D6E7E1F /* XBPickerView.modulemap */,
-				6646FE2F2A1BBB2B8CB63F5CE915C60E /* XBPickerView-dummy.m */,
-				AE2DC92745B557E1CB996762E10EB537 /* XBPickerView-Info.plist */,
-				F9426D542B94BB449E786A7CA64A0D8D /* XBPickerView-prefix.pch */,
-				3E3FFB1BE4768B9DC889521237E71FCC /* XBPickerView-umbrella.h */,
-				8147797193D0F18362ECA59D62A7C75B /* XBPickerView.debug.xcconfig */,
-				C257F9B486DFD5751C0E296E19A07511 /* XBPickerView.release.xcconfig */,
+				E5F418890E910D77E89AAB6B918A7B08 /* PickerCommonView.swift */,
+				66F2A34A166FFD43E595242FD8EDD212 /* PickerView.swift */,
+				17E75060D0B9008DEEBF8EA5A74CF774 /* UIPickerView+DataSource.h */,
+				FFEEE9612329E506DE9D3AC5F532D8A0 /* Pod */,
+				EE449286CC8A98D43F9B33D19B500ED2 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XBPickerView";
+			name = XBPickerView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		55F279A5CC14F283541E3649EE398E9C /* Targets Support Files */ = {
@@ -134,35 +132,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7CF45CBB1A2789BF8848AEE4079FF8DF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A661ADA1D9A99F4479359AB4A1F973CD /* LICENSE */,
-				27F8D4E5E7E565867FB6BCF4244D34E1 /* README.md */,
-				1C27994E19513E9CCE2D19F5DE87B7C4 /* XBPickerView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		CA05C93B6879839D7EBDC001E0C388EF /* XBPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				3FA170FFDC9CD8CF73D121AA631B2140 /* PickerCommonView.swift */,
-				DC948A976F41EC5DDAD7857AA15BC50D /* PickerView.swift */,
-				E11426A539D8B0542F9EFB232EF9822F /* UIPickerView+DataSource.h */,
-				7CF45CBB1A2789BF8848AEE4079FF8DF /* Pod */,
-				4CFA8D48EB806B9636A73D82FEBAC3FC /* Support Files */,
-			);
-			name = XBPickerView;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -182,6 +157,31 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE449286CC8A98D43F9B33D19B500ED2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BBE86144C1852D84A5F51C98F31DEA8 /* XBPickerView.modulemap */,
+				BCFE5CF5D32FB1840A4CA303267CFF2B /* XBPickerView-dummy.m */,
+				AECF01F1935A7159C215F515526C392A /* XBPickerView-Info.plist */,
+				CC77CE8921B59D91DF67916CF4C9D179 /* XBPickerView-prefix.pch */,
+				0D89B4C4867F5DF1EA39282B0F8B71B3 /* XBPickerView-umbrella.h */,
+				0350FC3B85C565A60AB8AD7D53FD5C1F /* XBPickerView.debug.xcconfig */,
+				FCA1CD823AA3C864B91B0B51599DF07C /* XBPickerView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XBPickerView";
+			sourceTree = "<group>";
+		};
+		FFEEE9612329E506DE9D3AC5F532D8A0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F17D1719E47048E652876B44EF0CA568 /* LICENSE */,
+				38CF32691768A3D0726B5133853EB4E3 /* README.md */,
+				1894D50762809CE2D6ACA06EC89AF4FD /* XBPickerView.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +212,7 @@
 			buildConfigurationList = 51BB9C47AE191C3C24C62CEA38389C2F /* Build configuration list for PBXNativeTarget "XBPickerView" */;
 			buildPhases = (
 				3AD0C376D6D4CF8F77515137BDA482E6 /* Headers */,
-				73785BA6B94A564E1AEF6F24946EBCAB /* Sources */,
+				4E06347E9DC2B749C7B53A165913C013 /* Sources */,
 				E89163DAEF6DA489B3B38C80ED460BFB /* Frameworks */,
 				B8C9D89FFAE42157C61C75E69BBE60AF /* Resources */,
 			);
@@ -290,13 +290,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		73785BA6B94A564E1AEF6F24946EBCAB /* Sources */ = {
+		4E06347E9DC2B749C7B53A165913C013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246BB363536FA204B722998D20DABAF2 /* PickerCommonView.swift in Sources */,
-				6C6662603B12C8AC166A5C68A81F1DBF /* PickerView.swift in Sources */,
-				A1889B609F76AA023AF64FD3129C8BB1 /* XBPickerView-dummy.m in Sources */,
+				1A67EA9DF32BA4317CF687F2EF9AC234 /* PickerCommonView.swift in Sources */,
+				D5BE2CF16DD41BDBF434647DFC97DC35 /* PickerView.swift in Sources */,
+				4307E05669ECAF835FCDBF9D81A6FF2A /* XBPickerView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +386,7 @@
 		};
 		18362EB6A002EA62270EE41954D5D54D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C257F9B486DFD5751C0E296E19A07511 /* XBPickerView.release.xcconfig */;
+			baseConfigurationReference = FCA1CD823AA3C864B91B0B51599DF07C /* XBPickerView.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -419,7 +419,7 @@
 		};
 		1E2DD01ECA005783A9A9634EBFA630DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8147797193D0F18362ECA59D62A7C75B /* XBPickerView.debug.xcconfig */;
+			baseConfigurationReference = 0350FC3B85C565A60AB8AD7D53FD5C1F /* XBPickerView.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -538,7 +538,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
